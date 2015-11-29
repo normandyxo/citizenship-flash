@@ -9,7 +9,7 @@ export function routerConfig ($locationProvider, $stateProvider,
       controllerAs: 'main'
     })
     .state('study', {
-      url: '/study',
+      url: 'study',
       templateUrl: 'app/study/study.html',
       controller: 'StudyController',
       controllerAs: 'ctrl'

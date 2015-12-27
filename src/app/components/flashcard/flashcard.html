@@ -1,0 +1,35 @@
+<div class="flashcard-container">
+  <md-card class="flashcard"
+           ng-class="{'flipped':flashcard.flipped}"
+           layout="column"
+           layout-align="{{flashcard.flipped ? 'start none' : 'end none'}}">
+    <span class="patriotic"></span>
+    <md-card-content ng-click="flashcard.flip()"
+                     ng-if="!flashcard.flipped"
+                     class="flashcard--front"
+                     flex>
+      {{flashcard.question}}
+    </md-card-content>
+    <md-card-content ng-click="flashcard.flip()"
+                     ng-if="flashcard.flipped"
+                     class="flashcard--back"
+                     flex>
+      {{flashcard.answer}}
+    </md-card-content>
+    <md-card-actions class="flashcard--question-actions"
+                     layout="row"
+                     layout-align="end center"
+                     ng-if="!flashcard.flipped">
+
+    </md-card-actions>
+    <md-card-actions class="flashcard--question-actions"
+                     layout="row"
+                     layout-align="end center"
+                     ng-if="flashcard.flipped">
+      <md-button class="md-icon-button md-primary" aria-label="Source"><md-icon>local_library</md-icon></md-button>
+      <md-button class="md-icon-button md-accent" aria-label="Save for later" ng-click="flashcard.toggleBookmark()">
+        <md-icon>{{flashcard.bookmarked? 'bookmark' : 'bookmark_border'}}</md-icon>
+      </md-button>
+    </md-card-actions>
+  </md-card>
+</div>

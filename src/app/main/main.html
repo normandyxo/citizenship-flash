@@ -1,15 +1,15 @@
 <div layout="vertical" layout-fill>
 
-  <md-content>
+  <md-content class="md-padding"
+              layout="row"
+              layout-wrap
+              layout-align="center start"
+              layout-xs="column">
     <header>
     </header>
-
-    <section class="jumbotron">
-    </section>
-
     <div class="techs" layout-align="center">
       <md-button ng-href="/study">Get started!</md-button>
     </div>
-  </md-content>
-
+    <flashcard question="main.q" answer="main.a" flex="50" flex-xs="100"></flashcard>
+    </<md-content>
 </div>

@@ -1,10 +1,13 @@
 'use strict';
 
-import StudyController from './study.controller'
+import { default as flashcardModule} from '../components/flashcard/flashcard.module';
+import StudyController from './study.controller';
 
 var moduleName = 'study.module';
 
-angular.module(moduleName, [])
-    .controller('StudyController', StudyController);
+angular.module(moduleName, [
+  flashcardModule
+])
+  .controller('StudyController', StudyController);
 
 export default moduleName;

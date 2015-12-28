@@ -1,11 +1,8 @@
 {
   "name": "citizenshipFlash",
   "version": "0.0.0",
-  "dependencies": {},
-  "scripts": {
-    "test": "gulp test"
-  },
-  "devDependencies": {
+  "dependencies": {
+    "express": "^4.13.3",
     "estraverse": "~4.1.0",
     "gulp": "~3.9.0",
     "gulp-autoprefixer": "~3.0.2",
@@ -52,6 +49,11 @@
     "chalk": "~1.1.1",
     "uglify-save-license": "~0.4.1",
     "wrench": "~1.5.8"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "start": "node cz-flash.js",
+    "postinstall": "gulp default"
   },
   "engines": {
     "node": ">=0.10.0"

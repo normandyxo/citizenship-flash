@@ -1,15 +1,17 @@
-<div layout="vertical" layout-fill>
-
+<div>
+  <md-toolbar md-scroll-shrink>
+    <div class="md-toolbar-tools">
+      <h3>
+        <span>Citizenship Flashcards</span>
+      </h3>
+    </div>
+  </md-toolbar>
   <md-content class="md-padding"
               layout="row"
               layout-wrap
               layout-align="center start"
-              layout-xs="column">
-    <header>
-    </header>
-    <div class="techs" layout-align="center">
-      <md-button ng-href="/study">Get started!</md-button>
-    </div>
+              layout-xs="column"
+              flex>
     <flashcard question="main.q" answer="main.a" flex="50" flex-xs="100"></flashcard>
-    </<md-content>
+  </md-content>
 </div>

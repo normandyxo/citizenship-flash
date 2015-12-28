@@ -2,9 +2,9 @@
 
 import {FlashcardDirective} from './flashcard.directive';
 
-var  moduleName = 'flashcard.module';
+let  moduleName = 'flashcard.module';
+let flashcardModule = angular.module(moduleName, []);
 
-angular.module(moduleName, [])
-    .directive('flashcard', FlashcardDirective);
+flashcardModule.directive('flashcard', FlashcardDirective);
 
 export default moduleName;

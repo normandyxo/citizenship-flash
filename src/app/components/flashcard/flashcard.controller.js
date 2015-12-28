@@ -1,19 +1,17 @@
 'use strict';
 
 class FlashcardController {
-  constructor ($scope) {
+  constructor () {
     'ngInject';
-    this.flipped = false;
-
-    console.log(this);
-    console.log($scope);
   }
 
   flip () {
     this.flipped = !this.flipped;
   }
 
-
+  toggleBookmark () {
+    this.bookmarked = !this.bookmarked;
+  }
 }
 
 export default FlashcardController;

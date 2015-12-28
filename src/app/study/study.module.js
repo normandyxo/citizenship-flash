@@ -3,11 +3,11 @@
 import { default as flashcardModule} from '../components/flashcard/flashcard.module';
 import StudyController from './study.controller';
 
-var moduleName = 'study.module';
+let moduleName = 'study.module';
 
 angular.module(moduleName, [
   flashcardModule
 ])
-  .controller('StudyController', StudyController);
+.controller('StudyController', StudyController);
 
 export default moduleName;

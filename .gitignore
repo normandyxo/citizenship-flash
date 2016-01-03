@@ -1,7 +1,6 @@
-node_modules/
-bower_components/
+build/
 coverage/
+node_modules/
 .sass-cache/
 .idea/
 .tmp/
-dist/

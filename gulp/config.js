@@ -46,7 +46,7 @@ export default {
 
   views: {
     index: 'app/index.html',
-    src: 'app/views/**/*.html',
+    src: 'app/js/**/*.html',
     dest: 'app/js'
   },
 
@@ -57,7 +57,7 @@ export default {
   },
 
   browserify: {
-    bundleName: 'main.js',
+    bundleName: 'cz-flash.js',
     prodSourcemap: false
   },
 

@@ -14,7 +14,7 @@ function declare(serviceMap) {
     if (!item) {
       return;
     }
-    
+
     if (item.fn && typeof item.fn === 'function') {
       servicesModule.service(item.name, item.fn);
     } else {
